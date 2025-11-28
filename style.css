@@ -262,9 +262,10 @@ body {
   font-family: Arial, sans-serif;
 
   /* --- BACKGROUND GAMBAR --- */
-  background-image: url("img/doctors-bg.webp"); /* ganti gambar.jpg dengan nama file kamu */
+  background-image: url("doctors-bg.webp"); /* ganti gambar.jpg dengan nama file kamu */
   background-size: cover; /* agar foto memenuhi layar */
   background-repeat: no-repeat; /* tidak mengulang */
   background-position: center; /* fokus ke tengah */
   background-attachment: fixed; /* efek paralaks */
 }
+
