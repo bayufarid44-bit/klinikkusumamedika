@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jadwal Harian Dokter - Klinik Kusuma Medika</title>
+
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #72f0a9, #61c0ff);
+        background-size: 300% 300%;
+        animation: bgMove 18s ease infinite;
+        background-attachment: fixed;
+        text-align: center;
+      }
+
+      @keyframes bgMove {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      header {
+        width: 100%;
+        padding: 18px 0;
+        font-size: 24px;
+        font-weight: bold;
+        background: rgba(255, 255, 255, 0.25);
+        backdrop-filter: blur(10px);
+      }
+
+      nav {
+        margin-top: 15px;
+      }
+
+      nav a {
+        text-decoration: none;
+        background: white;
+        color: #003b7a;
+        padding: 10px 18px;
+        margin: 0 6px;
+        border-radius: 10px;
+        font-weight: bold;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        display: inline-block;
+        transition: 0.25s ease;
+      }
+
+      nav a:hover {
+        background: #003b7a;
+        color: white;
+      }
+
+      .container {
+        width: 90%;
+        max-width: 750px;
+        margin: 40px auto;
+        padding: 30px;
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.35);
+        backdrop-filter: blur(12px);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+
+      th,
+      td {
+        padding: 12px;
+        background: rgba(255, 255, 255, 0.65);
+        border-radius: 12px;
+        color: #003b7a;
+        font-weight: bold;
+        vertical-align: middle;
+        text-align: center;
+      }
+
+      th {
+        font-size: 16px;
+      }
+
+      /* Foto dokter bulat */
+      .foto-dokter {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: auto;
+        border: 3px solid rgba(255, 255, 255, 0.8);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+      }
+
+      .foto-dokter img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>Jadwal Dokter Harian</header>
+
+    <nav>
+      <a href="index.html">Beranda</a>
+      <a href="layanan.html">Layanan</a>
+      <a href="jadwal.html">Jadwal</a>
+      <a href="daftar.html">Daftar Online</a>
+    </nav>
+
+    <div class="container">
+      <h2>Jadwal Hari Ini</h2>
+
+      <table>
+        <tr>
+          <th>Foto</th>
+          <th>Nama Dokter</th>
+          <th>Spesialis</th>
+          <th>Jam Praktik</th>
+        </tr>
+
+        <!-- Dokter Umum 1 -->
+        <tr>
+          <td>
+            <div class="foto-dokter">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/387/387561.png"
+              />
+            </div>
+          </td>
+          <td>dr. Andi Pratama</td>
+          <td>Dokter Umum</td>
+          <td>08.00 - 11.00</td>
+        </tr>
+
+        <!-- Dokter Umum 2 -->
+        <tr>
+          <td>
+            <div class="foto-dokter">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/387/387569.png"
+              />
+            </div>
+          </td>
+          <td>dr. Siti Nurhaliza</td>
+          <td>Dokter Umum</td>
+          <td>11.00 - 14.00</td>
+        </tr>
+
+        <!-- Dokter Gigi -->
+        <tr>
+          <td>
+            <div class="foto-dokter">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/387/387558.png"
+              />
+            </div>
+          </td>
+          <td>drg. Budi Santoso</td>
+          <td>Dokter Gigi</td>
+          <td>14.00 - 17.00</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

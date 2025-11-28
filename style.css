@@ -1,0 +1,270 @@
+/* ===========================================================
+   GLOBAL SETTING + BACKGROUND
+   =========================================================== */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+
+  /* GRADIENT HIDUP */
+  background: linear-gradient(135deg, #214ed1, #67c96d, #1baee2);
+  background-size: 300% 300%;
+  animation: bergerak 18s ease infinite;
+  background-attachment: fixed;
+  color: #003b7a;
+}
+
+/* Animasi gradient */
+@keyframes bergerak {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Bola cahaya */
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+  filter: blur(120px);
+  z-index: -1;
+}
+
+body::before {
+  background: rgba(255, 255, 255, 0.35);
+  top: 10%;
+  left: 5%;
+}
+
+body::after {
+  background: rgba(255, 255, 255, 0.22);
+  bottom: 10%;
+  right: 5%;
+}
+
+/* ===========================================================
+   PENYELARASAN TEKS INDEX
+   =========================================================== */
+.section,
+.section p,
+.section h2,
+.section h3,
+.section ul,
+.section li,
+.card-blur p,
+.card-blur h3,
+.card-blur ul,
+.card-blur li,
+footer p {
+  text-align: center;
+}
+
+.section ul,
+.card-blur ul {
+  list-style-position: inside;
+}
+
+/* ===========================================================
+   CARD VISI & MISI (GLASS EFFECT)
+   =========================================================== */
+.card-blur {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 25px 28px;
+  border-radius: 18px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.18);
+  max-width: 900px;
+  margin: 20px auto;
+}
+
+.card-blur h3 {
+  margin-top: 10px;
+  margin-bottom: 8px;
+  color: #003b7a;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.card-blur p {
+  margin-bottom: 15px;
+  color: #003b7a;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.card-blur ul {
+  padding-left: 20px;
+}
+
+.card-blur ul li {
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: #003b7a;
+}
+
+/* ===========================================================
+   FORM PENDAFTARAN ONLINE — GLASS MODERN STYLE
+   =========================================================== */
+.page-daftar {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #2a78e3, #6ed57c);
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+}
+
+/* Judul */
+.page-daftar h2 {
+  text-align: center;
+  color: white;
+  margin-top: 40px;
+  font-size: 30px;
+  font-weight: bold;
+  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+/* Card form */
+.form-pendaftaran {
+  width: 90%;
+  max-width: 520px;
+  margin: 35px auto;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 28px;
+  border-radius: 18px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.18);
+}
+
+/* Label */
+.form-pendaftaran label {
+  font-weight: bold;
+  display: block;
+  margin-top: 18px;
+  color: #003b7a;
+  font-size: 16px;
+}
+
+/* Input */
+.form-pendaftaran input,
+.form-pendaftaran select,
+.form-pendaftaran textarea {
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  border: 2px solid rgba(0, 91, 255, 0.25);
+  margin-top: 7px;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.85);
+  transition: 0.2s ease;
+}
+
+/* Fokus */
+.form-pendaftaran input:focus,
+.form-pendaftaran select:focus,
+.form-pendaftaran textarea:focus {
+  border-color: #1568d8;
+  background: #fff;
+  outline: none;
+  box-shadow: 0 0 8px rgba(21, 104, 216, 0.4);
+}
+
+/* Tombol */
+.btn-daftar {
+  width: 100%;
+  padding: 15px;
+  margin-top: 25px;
+  background: #1568d8;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.btn-daftar:hover {
+  background: #0e55b4;
+}
+/* ============================================
+   MEMBUAT SEMUA TEKS DI TAMPILAN MENJADI CENTER
+   ============================================ */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+label,
+footer,
+.container,
+.section,
+.card-blur,
+table {
+  text-align: center;
+}
+
+/* Supaya tabel tidak kacau */
+table td,
+table th {
+  text-align: center !important;
+}
+
+/* Supaya form input tidak ikut center di dalamnya */
+input,
+select,
+textarea {
+  text-align: left !important;
+}
+/* Tombol Menu Klinik */
+.menu-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.btn-menu {
+  background: #1568d8;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  width: 180px;
+  transition: 0.3s;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn-menu:hover {
+  background: #0f4fa8;
+  transform: scale(1.05);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+
+  /* --- BACKGROUND GAMBAR --- */
+  background-image: url("img/doctors-bg.webp"); /* ganti gambar.jpg dengan nama file kamu */
+  background-size: cover; /* agar foto memenuhi layar */
+  background-repeat: no-repeat; /* tidak mengulang */
+  background-position: center; /* fokus ke tengah */
+  background-attachment: fixed; /* efek paralaks */
+}
