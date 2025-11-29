@@ -3,11 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <title>Daftar Online - Klinik Kusuma Medika</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
 
     <style>
-      /* ======= GLOBAL ======= */
       body {
         margin: 0;
         padding: 0;
@@ -21,76 +18,62 @@
         color: #ffffff;
         margin-top: 40px;
         font-size: 32px;
-        letter-spacing: 1px;
         font-weight: bold;
-        text-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+        text-shadow: 0 2px 6px rgba(0,0,0,0.25);
       }
 
-      /* ======= FORM CARD ======= */
-      form {
+      .card {
         width: 90%;
         max-width: 520px;
         margin: 40px auto;
         padding: 30px;
         border-radius: 18px;
-
-        background: rgba(255, 255, 255, 0.28);
+        background: rgba(255,255,255,0.28);
         backdrop-filter: blur(12px);
-        border: 1px solid rgba(255, 255, 255, 0.45);
-        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        border: 1px solid rgba(255,255,255,0.45);
+        box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        text-align: center;
       }
 
-      label {
-        display: block;
-        margin-top: 16px;
-        margin-bottom: 6px;
+      p {
+        font-size: 17px;
         color: #003b7a;
-        font-size: 16px;
         font-weight: bold;
       }
 
-      input,
-      textarea,
-      select {
-        width: 100%;
-        padding: 14px;
-        font-size: 15px;
-
-        border: 2px solid rgba(0, 91, 255, 0.25);
+      a.btn {
+        display: block;
+        margin-top: 25px;
+        padding: 15px;
+        background: #1568d8;
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: bold;
         border-radius: 12px;
-
-        background: rgba(255, 255, 255, 0.9);
         transition: 0.25s ease;
       }
 
-      input:focus,
-      textarea:focus,
-      select:focus {
-        outline: none;
-        border-color: #1568d8;
-        box-shadow: 0 0 8px rgba(21, 104, 216, 0.4);
+      a.btn:hover {
+        background: #0e55b4;
       }
 
-      /* ======= BUTTON ======= */
-      button {
-        width: 100%;
-        margin-top: 28px;
+      /* Tombol WhatsApp */
+      a.wa-btn {
+        display: block;
+        margin-top: 20px;
         padding: 15px;
-
-        background: #1568d8;
-        color: #ffffff;
-
-        border: none;
-        border-radius: 12px;
+        background: #25d366;
+        color: white;
+        text-decoration: none;
         font-size: 18px;
         font-weight: bold;
-        cursor: pointer;
-
-        transition: background 0.25s ease;
+        border-radius: 12px;
+        transition: 0.25s ease;
       }
 
-      button:hover {
-        background: #0e55b4;
+      a.wa-btn:hover {
+        background: #1eb255;
       }
     </style>
   </head>
@@ -98,27 +81,25 @@
   <body>
     <h2>Pendaftaran Pasien Online</h2>
 
-    <form id="formDaftar">
-      <label>Nama</label>
-      <input type="text" id="nama" required />
+    <div class="card">
+      <p>Silakan melakukan pendaftaran online melalui tombol berikut:</p>
 
-      <label>Umur</label>
-      <input type="number" id="umur" required />
+      <a class="btn"
+         href="https://reservasi.myklinik.id?reservasiOnline=dHRTMHhqOEU5VTZwUnhhVW5zbzh2UT09"
+         target="_blank">
+        Buka Halaman Pendaftaran
+      </a>
 
-      <label>NIK</label>
-      <input type="number" id="nik" required />
+      <p style="margin-top: 20px; color: #003b7a;">
+        Setelah mendaftar, <b>screenshoot bukti pendaftaran</b> lalu kirimkan ke WhatsApp klinik:
+      </p>
 
-      <label>Pemeriksaan</label>
-      <select id="jenis_periksa" required>
-        <option value="">-- Pilih Jenis Pemeriksaan --</option>
-        <option value="BPJS">BPJS</option>
-        <option value="Umum">Umum</option>
-      </select>
-
-      <label>Keluhan</label>
-      <textarea id="keluhan" rows="3" required></textarea>
-
-      <button type="submit" onclick="kirimWhatsApp(event)">Daftar</button>
-    </form>
+      <!-- GANTI NOMOR WA DI BAWAH -->
+      <a class="wa-btn"
+         href="https://wa.me/6282142169606text=Halo%20Klinik,%20saya%20ingin%20mengirim%20bukti%20pendaftaran%20online."
+         target="_blank">
+        Kirim Bukti ke WhatsApp
+      </a>
+    </div>
   </body>
 </html>
