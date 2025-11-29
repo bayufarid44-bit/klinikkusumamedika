@@ -262,7 +262,7 @@ body {
   font-family: Arial, sans-serif;
 
   /* --- BACKGROUND GAMBAR --- */
-  background-image: url("doctors-bg.webp"); /* ganti gambar.jpg dengan nama file kamu */
+  background-image: url("WhatsApp Image 2025-11-29 at 11.31.44_f5d49a63.jpg"); /* ganti gambar.jpg dengan nama file kamu */
   background-size: cover; /* agar foto memenuhi layar */
   background-repeat: no-repeat; /* tidak mengulang */
   background-position: center; /* fokus ke tengah */
@@ -297,4 +297,5 @@ body {
   padding: 6px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
+
 
