@@ -89,7 +89,7 @@ footer p {
 .card-blur h3 {
   margin-top: 10px;
   margin-bottom: 8px;
-  color: #003b7a;
+  color: #ffffff;
   font-size: 22px;
   font-weight: bold;
 }
@@ -297,6 +297,7 @@ body {
   padding: 6px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
+
 
 
 
