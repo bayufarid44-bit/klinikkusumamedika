@@ -89,14 +89,14 @@ footer p {
 .card-blur h3 {
   margin-top: 10px;
   margin-bottom: 8px;
-  color: #ffffff;
+  color: white;
   font-size: 22px;
   font-weight: bold;
 }
 
 .card-blur p {
   margin-bottom: 15px;
-  color: #003b7a;
+  color: white;
   line-height: 1.6;
   font-size: 16px;
 }
@@ -108,7 +108,7 @@ footer p {
 .card-blur ul li {
   margin-bottom: 8px;
   font-size: 16px;
-  color: #003b7a;
+  color:white;
 }
 
 /* ===========================================================
@@ -297,6 +297,7 @@ body {
   padding: 6px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
+
 
 
 
