@@ -275,6 +275,17 @@ a {
   color: #ffffff !important;
   font-weight: bold;
 }
+/* ===========================================================
+   FOTO DOKTER (JADWAL)
+   =========================================================== */
+.foto-dokter {
+  width: 160px;     /* ubah sesuai ukuran yang kamu mau */
+  height: 160px;
+  object-fit: cover;
+  border-radius: 12px;   /* kalau mau bulat penuh → 50% */
+  margin: 10px 0;
+}
+
 
 
 
