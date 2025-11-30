@@ -6,7 +6,7 @@ body {
   padding: 0;
   font-family: Arial, sans-serif;
 
-  /* --- BACKGROUND GAMBAR --- */
+  /* Background */
   background-image: url("img/klinik.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -89,7 +89,6 @@ body {
 .card-blur ul li {
   font-size: 16px;
   line-height: 1.6;
-  color: #003b7a;
 }
 
 .card-blur ul {
@@ -170,7 +169,6 @@ body {
   font-size: 16px;
   background: rgba(255, 255, 255, 0.85);
   transition: 0.2s ease;
-  text-align: left !important;
 }
 
 .form-pendaftaran input:focus,
