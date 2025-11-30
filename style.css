@@ -224,3 +224,16 @@ table th {
     height: 45px;
   }
 }
+.section {
+  text-align: center;
+}
+
+.card-blur h3,
+.card-blur p {
+  text-align: center;
+}
+
+.card-blur ul {
+  text-align: left;
+}
+
