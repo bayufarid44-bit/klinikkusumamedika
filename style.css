@@ -233,7 +233,10 @@ table th {
   text-align: center;
 }
 
-.card-blur ul {
-  text-align: left;
+/* Semua teks rata tengah */
+body {
+  text-align: center;
 }
+
+
 
