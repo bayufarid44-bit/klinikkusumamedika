@@ -6,12 +6,12 @@ body {
   padding: 0;
   font-family: Arial, sans-serif;
 
-  /* Background */
-  background-image: url("img/klinik.jpg");
+  .hero {
+  background-image: url("klinik.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
   background-position: center;
-  background-attachment: fixed;
+}
+
 
   color: #003b7a;
 }
@@ -247,6 +247,7 @@ table {
   margin-right: auto;
   text-align: center;
 }
+
 
 
 
