@@ -247,6 +247,38 @@ table {
   margin-right: auto;
   text-align: center;
 }
+/* ===========================================================
+   FIX AGAR TEKS JELAS DI ATAS BACKGROUND BIRU
+   =========================================================== */
+
+/* Semua teks default */
+body, p, h1, h2, h3, h4, h5, h6, li, a {
+  color: #0a1a2f !important; /* biru gelap-kontras */
+}
+
+/* Teks dalam card blur */
+.card-blur,
+.card-blur h3,
+.card-blur p,
+.card-blur ul li {
+  color: #0a1a2f !important;
+}
+
+/* Teks judul di bagian hero */
+.section h2 {
+  color: #072044 !important;
+  text-shadow: 0 1px 3px rgba(255, 255, 255, 0.4);
+}
+
+/* Link agar tetap jelas */
+a {
+  color: #002b5b !important;
+  font-weight: bold;
+}
+body, p, h2, h3 {
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.3);
+}
+
 
 
 
