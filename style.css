@@ -1,128 +1,133 @@
 /* ===========================================================
-   GLOBAL SETTING + BACKGROUND
+   GLOBAL STYLE + BACKGROUND GAMBAR
    =========================================================== */
 body {
   margin: 0;
+  padding: 0;
   font-family: Arial, sans-serif;
 
-  /* GRADIENT HIDUP */
-  background: linear-gradient(135deg, #214ed1, #67c96d, #1baee2);
-  background-size: 300% 300%;
-  animation: bergerak 18s ease infinite;
+  /* --- BACKGROUND GAMBAR --- */
+  background-image: url("img/klinik.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   background-attachment: fixed;
+
   color: #003b7a;
 }
 
-/* Animasi gradient */
-@keyframes bergerak {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-/* Bola cahaya */
-body::before,
-body::after {
-  content: "";
-  position: fixed;
-  width: 380px;
-  height: 380px;
-  border-radius: 50%;
-  filter: blur(120px);
-  z-index: -1;
-}
-
-body::before {
-  background: rgba(255, 255, 255, 0.35);
-  top: 10%;
-  left: 5%;
-}
-
-body::after {
-  background: rgba(255, 255, 255, 0.22);
-  bottom: 10%;
-  right: 5%;
-}
-
 /* ===========================================================
-   PENYELARASAN TEKS INDEX
+   LOGO
    =========================================================== */
-.section,
-.section p,
-.section h2,
-.section h3,
-.section ul,
-.section li,
-.card-blur p,
-.card-blur h3,
-.card-blur ul,
-.card-blur li,
-footer p {
-  text-align: center;
+.logo-kecil,
+.logo-header {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: white;
+  padding: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-.section ul,
-.card-blur ul {
-  list-style-position: inside;
+.logo-kecil {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  z-index: 999;
+}
+
+.logo-header {
+  position: absolute;
+  top: 20px;
+  left: 20px;
 }
 
 /* ===========================================================
-   CARD VISI & MISI (GLASS EFFECT)
+   TEXT & SECTION ALIGNMENT
+   =========================================================== */
+.section {
+  text-align: center;
+  padding: 20px;
+}
+
+.section h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.section p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* ===========================================================
+   CARD (GLASS EFFECT)
    =========================================================== */
 .card-blur {
-  background: rgba(255, 255, 255, 0.2);
-  padding: 25px 28px;
+  background: rgba(255, 255, 255, 0.25);
+  padding: 25px;
   border-radius: 18px;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.4);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.18);
   max-width: 900px;
-  margin: 20px auto;
+  margin: 25px auto;
+  text-align: left;
+  color: #003b7a;
 }
 
 .card-blur h3 {
   margin-top: 10px;
-  margin-bottom: 8px;
-  color:  #003b7a ;
   font-size: 22px;
   font-weight: bold;
+  color: #003b7a;
 }
 
-.card-blur p {
-  margin-bottom: 15px;
-  color: white;
-  line-height: 1.6;
+.card-blur p,
+.card-blur ul li {
   font-size: 16px;
+  line-height: 1.6;
+  color: #003b7a;
 }
 
 .card-blur ul {
   padding-left: 20px;
 }
 
-.card-blur ul li {
-  margin-bottom: 8px;
-  font-size: 16px;
-  color:white;
+/* ===========================================================
+   TOMBOL MENU
+   =========================================================== */
+.menu-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 15px;
+  align-items: center;
+}
+
+.btn-menu {
+  background: #1568d8;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  width: 180px;
+  text-align: center;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn-menu:hover {
+  background: #0f4fa8;
+  transform: scale(1.05);
 }
 
 /* ===========================================================
-   FORM PENDAFTARAN ONLINE — GLASS MODERN STYLE
+   FORM DAFTAR ONLINE (GLASS EFFECT)
    =========================================================== */
-.page-daftar {
-  font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #2a78e3, #6ed57c);
-  background-attachment: fixed;
-  margin: 0;
-  padding: 0;
-}
-
-/* Judul */
 .page-daftar h2 {
   text-align: center;
   color: white;
@@ -132,15 +137,14 @@ footer p {
   text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
 }
 
-/* Card form */
 .form-pendaftaran {
   width: 90%;
   max-width: 520px;
   margin: 35px auto;
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.25);
   padding: 28px;
   border-radius: 18px;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.5);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.18);
 }
@@ -166,9 +170,9 @@ footer p {
   font-size: 16px;
   background: rgba(255, 255, 255, 0.85);
   transition: 0.2s ease;
+  text-align: left !important;
 }
 
-/* Fokus */
 .form-pendaftaran input:focus,
 .form-pendaftaran select:focus,
 .form-pendaftaran textarea:focus {
@@ -178,7 +182,7 @@ footer p {
   box-shadow: 0 0 8px rgba(21, 104, 216, 0.4);
 }
 
-/* Tombol */
+/* Tombol submit */
 .btn-daftar {
   width: 100%;
   padding: 15px;
@@ -196,111 +200,29 @@ footer p {
 .btn-daftar:hover {
   background: #0e55b4;
 }
-/* ============================================
-   MEMBUAT SEMUA TEKS DI TAMPILAN MENJADI CENTER
-   ============================================ */
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul,
-li,
-label,
-footer,
-.container,
-.section,
-.card-blur,
-table {
+
+/* ===========================================================
+   TABLE FIX
+   =========================================================== */
+table td,
+table th {
   text-align: center;
 }
 
-/* Supaya tabel tidak kacau */
-table td,
-table th {
-  text-align: center !important;
+/* ===========================================================
+   RESPONSIVE
+   =========================================================== */
+@media (max-width: 600px) {
+  .card-blur {
+    padding: 18px;
+  }
+
+  .btn-menu {
+    width: 100%;
+  }
+
+  .logo-kecil {
+    width: 45px;
+    height: 45px;
+  }
 }
-
-/* Supaya form input tidak ikut center di dalamnya */
-input,
-select,
-textarea {
-  text-align: left !important;
-}
-/* Tombol Menu Klinik */
-.menu-buttons {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  margin-top: 10px;
-  align-items: center;
-}
-
-.btn-menu {
-  background: #1568d8;
-  color: white;
-  padding: 10px 25px;
-  border-radius: 10px;
-  text-decoration: none;
-  font-weight: bold;
-  width: 180px;
-  transition: 0.3s;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-
-.btn-menu:hover {
-  background: #0f4fa8;
-  transform: scale(1.05);
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-
-  /* --- BACKGROUND GAMBAR --- */
-  background-image: url("img/klinik.jpg"); /* ganti gambar.jpg dengan nama file kamu */
-  background-size: cover; /* agar foto memenuhi layar */
-  background-repeat: no-repeat; /* tidak mengulang */
-  background-position: center; /* fokus ke tengah */
-  background-attachment: fixed; /* efek paralaks */
-}
-
-/* Logo kecil pojok kiri atas */
-.logo-kecil {
-  position: fixed;
-  top: 15px;
-  left: 15px;
-  width: 55px;
-  height: 55px;
-  border-radius: 50%;
-  object-fit: cover;
-  z-index: 999;
-  background: white;
-  padding: 5px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
-}
-
-/* Logo di kiri atas dalam header */
-.logo-header {
-  width: 60px;
-  height: 60px;
-  object-fit: cover;
-  border-radius: 50%;
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  background: white;
-  padding: 6px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-
-
-
-
-
-
