@@ -1,11 +1,11 @@
 /* ===========================================================
-   GLOBAL STYLE + BACKGROUND GAMBAR
+   GLOBAL STYLE + BACKGROUND
    =========================================================== */
 body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  color: #003b7a;
+  color: #ffffff !important;
 }
 
 .hero {
@@ -15,7 +15,7 @@ body {
 }
 
 /* ===========================================================
-   LOGO
+   LOGO — TETAP KIRI
    =========================================================== */
 .logo-kecil,
 .logo-header {
@@ -26,23 +26,15 @@ body {
   background: white;
   padding: 5px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-.logo-kecil {
-  position: fixed;
+  position: absolute;
   top: 15px;
   left: 15px;
+  text-align: left !important;
   z-index: 999;
 }
 
-.logo-header {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-}
-
 /* ===========================================================
-   FOTO DOKTER — FINAL, SINGKRON HTML, TANPA DUPLIKASI
+   FOTO DOKTER — SINKRON DENGAN HTML
    =========================================================== */
 .foto-dokter {
   width: 65px;
@@ -66,7 +58,7 @@ body {
 }
 
 /* ===========================================================
-   TEXT & SECTION ALIGNMENT
+   SECTION TITLE
    =========================================================== */
 .section {
   text-align: center;
@@ -78,7 +70,7 @@ body {
   font-weight: bold;
   margin-bottom: 15px;
   color: #ffffff !important;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.35);
+  text-shadow: 0 2px 4px rgba(0,0,0,0.35);
 }
 
 /* ===========================================================
@@ -94,7 +86,7 @@ body {
   max-width: 900px;
   margin: 25px auto;
   text-align: left;
-  color: white;
+  color: white !important;
 }
 
 /* ===========================================================
@@ -117,8 +109,8 @@ body {
   font-weight: bold;
   width: 180px;
   text-align: center;
-  transition: 0.3s ease;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: 0.3s;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
 .btn-menu:hover {
@@ -127,37 +119,26 @@ body {
 }
 
 /* ===========================================================
-   FORM DAFTAR ONLINE (GLASS EFFECT)
-   =========================================================== */
-.page-daftar h2 {
-  text-align: center;
-  color: white;
-  margin-top: 40px;
-  font-size: 30px;
-  font-weight: bold;
-  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
-}
-
-/* ===========================================================
-   TABLE FIX
+   TABEL
    =========================================================== */
 table td,
 table th {
   text-align: center;
+  color: #ffffff !important;
 }
 
 /* ===========================================================
-   SEMUA TEKS PUTIH
+   SEMUA TEKS RATA TENGAH
+   LOGO TETAP KIRI
    =========================================================== */
-body, p, h1, h2, h3, h4, h5, h6, li, a, td, th {
-  color: #ffffff !important;
+body * {
+  text-align: center !important;
 }
 
-.card-blur,
-.card-blur h3,
-.card-blur p,
-.card-blur ul li {
-  color: #ffffff !important;
+.logo-kecil,
+.logo-header {
+  text-align: left !important;
+  left: 15px !important;
 }
 
 /* ===========================================================
@@ -172,7 +153,8 @@ body, p, h1, h2, h3, h4, h5, h6, li, a, td, th {
     width: 100%;
   }
 
-  .logo-kecil {
+  .logo-kecil,
+  .logo-header {
     width: 45px;
     height: 45px;
   }
@@ -181,23 +163,4 @@ body, p, h1, h2, h3, h4, h5, h6, li, a, td, th {
     width: 65px;
     height: 65px;
   }
-/* ===============================================
-   SEMUA TEKS RATA TENGAH
-   =============================================== */
-body, p, h1, h2, h3, h4, h5, h6, li, td, th {
-  text-align: center !important;
 }
-
-/* NAVIGASI TETAP TENGAH */
-nav a {
-  text-align: center !important;
-}
-
-/* LOGO KLINIK TETAP DI KIRI */
-.logo-kecil,
-.logo-header {
-  text-align: left !important;
-  left: 15px !important;
-}
-}
-
