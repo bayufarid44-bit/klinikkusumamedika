@@ -5,15 +5,13 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
+  color: #003b7a;
+}
 
-  .hero {
+.hero {
   background-image: url("klinik.jpg");
   background-size: cover;
   background-position: center;
-}
-
-
-  color: #003b7a;
 }
 
 /* ===========================================================
@@ -44,6 +42,27 @@ body {
 }
 
 /* ===========================================================
+   FOTO DOKTER
+   =========================================================== */
+.foto-dokter {
+  width: 160px;       /* ukuran lingkaran */
+  height: 160px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;      
+  justify-content: center;
+  align-items: center;
+  background: #fff;   /* opsional agar jelas */
+}
+
+.foto-dokter img {
+  width: auto;      
+  height: 100%;     
+  object-fit: cover;
+  display: block;
+}
+
+/* ===========================================================
    TEXT & SECTION ALIGNMENT
    =========================================================== */
 .section {
@@ -55,11 +74,6 @@ body {
   font-size: 28px;
   font-weight: bold;
   margin-bottom: 15px;
-}
-
-.section p {
-  font-size: 16px;
-  line-height: 1.6;
 }
 
 /* ===========================================================
@@ -75,24 +89,7 @@ body {
   max-width: 900px;
   margin: 25px auto;
   text-align: left;
-  color: #003b7a;
-}
-
-.card-blur h3 {
-  margin-top: 10px;
-  font-size: 22px;
-  font-weight: bold;
-  color: #003b7a;
-}
-
-.card-blur p,
-.card-blur ul li {
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-.card-blur ul {
-  padding-left: 20px;
+  color: white;
 }
 
 /* ===========================================================
@@ -136,75 +133,31 @@ body {
   text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
 }
 
-.form-pendaftaran {
-  width: 90%;
-  max-width: 520px;
-  margin: 35px auto;
-  background: rgba(255, 255, 255, 0.25);
-  padding: 28px;
-  border-radius: 18px;
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.18);
-}
-
-/* Label */
-.form-pendaftaran label {
-  font-weight: bold;
-  display: block;
-  margin-top: 18px;
-  color: #003b7a;
-  font-size: 16px;
-}
-
-/* Input */
-.form-pendaftaran input,
-.form-pendaftaran select,
-.form-pendaftaran textarea {
-  width: 100%;
-  padding: 14px;
-  border-radius: 12px;
-  border: 2px solid rgba(0, 91, 255, 0.25);
-  margin-top: 7px;
-  font-size: 16px;
-  background: rgba(255, 255, 255, 0.85);
-  transition: 0.2s ease;
-}
-
-.form-pendaftaran input:focus,
-.form-pendaftaran select:focus,
-.form-pendaftaran textarea:focus {
-  border-color: #1568d8;
-  background: #fff;
-  outline: none;
-  box-shadow: 0 0 8px rgba(21, 104, 216, 0.4);
-}
-
-/* Tombol submit */
-.btn-daftar {
-  width: 100%;
-  padding: 15px;
-  margin-top: 25px;
-  background: #1568d8;
-  color: white;
-  border: none;
-  border-radius: 12px;
-  font-size: 18px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: 0.2s ease;
-}
-
-.btn-daftar:hover {
-  background: #0e55b4;
-}
-
 /* ===========================================================
    TABLE FIX
    =========================================================== */
 table td,
 table th {
   text-align: center;
+}
+
+/* ===========================================================
+   SEMUA TEKS PUTIH
+   =========================================================== */
+body, p, h1, h2, h3, h4, h5, h6, li, a, td, th {
+  color: #ffffff !important;
+}
+
+.card-blur,
+.card-blur h3,
+.card-blur p,
+.card-blur ul li {
+  color: #ffffff !important;
+}
+
+.section h2 {
+  color: #ffffff !important;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.35);
 }
 
 /* ===========================================================
@@ -224,86 +177,3 @@ table th {
     height: 45px;
   }
 }
-.section {
-  text-align: center;
-}
-
-.card-blur h3,
-.card-blur p {
-  text-align: center;
-}
-
-/* Semua teks rata tengah */
-body {
-  text-align: center;
-}
-
-.card-blur ul {
-  text-align: center;
-  list-style-position: inside;
-}
-table {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-/* ===========================================================
-   UBAH SEMUA TEKS MENJADI PUTIH
-   =========================================================== */
-
-/* Semua teks default */
-body, p, h1, h2, h3, h4, h5, h6, li, a, td, th {
-  color: #ffffff !important;
-}
-
-/* Teks dalam card blur */
-.card-blur,
-.card-blur h3,
-.card-blur p,
-.card-blur ul li {
-  color: #ffffff !important;
-}
-
-/* Judul besar */
-.section h2 {
-  color: #ffffff !important;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.35);
-}
-
-/* Link */
-a {
-  color: #ffffff !important;
-  font-weight: bold;
-}
-.foto-dokter {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%; /* bulat */
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.foto-dokter img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
