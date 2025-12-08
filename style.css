@@ -41,9 +41,9 @@ body {
   left: 20px;
 }
 
-/* ================================
-   FOTO DOKTER (FIX FINAL)
-================================ */
+/* ===========================================================
+   FOTO DOKTER — FINAL, SINGKRON HTML, TANPA DUPLIKASI
+   =========================================================== */
 .foto-dokter {
   width: 65px;
   height: 65px;
@@ -52,16 +52,18 @@ body {
   border: 3px solid rgba(255,255,255,0.9);
   margin: auto;
   box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* BAGIAN YANG SANGAT PENTING */
 .foto-dokter img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
+  border-radius: 50%;
 }
-
 
 /* ===========================================================
    TEXT & SECTION ALIGNMENT
@@ -75,6 +77,8 @@ body {
   font-size: 28px;
   font-weight: bold;
   margin-bottom: 15px;
+  color: #ffffff !important;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.35);
 }
 
 /* ===========================================================
@@ -156,11 +160,6 @@ body, p, h1, h2, h3, h4, h5, h6, li, a, td, th {
   color: #ffffff !important;
 }
 
-.section h2 {
-  color: #ffffff !important;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.35);
-}
-
 /* ===========================================================
    RESPONSIVE
    =========================================================== */
@@ -177,34 +176,9 @@ body, p, h1, h2, h3, h4, h5, h6, li, a, td, th {
     width: 45px;
     height: 45px;
   }
-   .foto-dokter {
-  width: 65px !important;
-  height: 65px !important;
-  border-radius: 50% !important;
-  overflow: hidden !important;
-}
 
-.foto-dokter img {
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover !important;
-  border-radius: 50% !important;
-  display: block !important;
+  .foto-dokter {
+    width: 65px;
+    height: 65px;
+  }
 }
-.foto-dokter {
-  width: 65px !important;
-  height: 65px !important;
-  border-radius: 50% !important;
-  overflow: hidden !important;
-}
-
-.foto-dokter img {
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover !important;
-  border-radius: 50% !important;
-  display: block !important;
-}
-}
-
-
