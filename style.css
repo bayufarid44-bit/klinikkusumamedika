@@ -278,13 +278,14 @@ a {
 .foto-dokter {
   width: 160px;
   height: 160px;
-  border-radius: 12px;   /* kalau mau bulat → 50% */
-  overflow: hidden;      /* WAJIB supaya gambar tidak keluar kotak */
+  border-radius: 50%;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #f0f0f0;   /* opsional */
+  background: #f0f0f0;
 }
+
 
 .foto-dokter img {
   width: 100%;
@@ -293,6 +294,7 @@ a {
   border-radius: 50%;
   display: block;
 }
+
 
 
 
