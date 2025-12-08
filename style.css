@@ -181,4 +181,23 @@ body, p, h1, h2, h3, h4, h5, h6, li, a, td, th {
     width: 65px;
     height: 65px;
   }
+/* ===============================================
+   SEMUA TEKS RATA TENGAH
+   =============================================== */
+body, p, h1, h2, h3, h4, h5, h6, li, td, th {
+  text-align: center !important;
 }
+
+/* NAVIGASI TETAP TENGAH */
+nav a {
+  text-align: center !important;
+}
+
+/* LOGO KLINIK TETAP DI KIRI */
+.logo-kecil,
+.logo-header {
+  text-align: left !important;
+  left: 15px !important;
+}
+}
+
