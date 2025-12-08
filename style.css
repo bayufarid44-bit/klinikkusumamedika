@@ -177,5 +177,34 @@ body, p, h1, h2, h3, h4, h5, h6, li, a, td, th {
     width: 45px;
     height: 45px;
   }
+   .foto-dokter {
+  width: 65px !important;
+  height: 65px !important;
+  border-radius: 50% !important;
+  overflow: hidden !important;
 }
+
+.foto-dokter img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  border-radius: 50% !important;
+  display: block !important;
+}
+.foto-dokter {
+  width: 65px !important;
+  height: 65px !important;
+  border-radius: 50% !important;
+  overflow: hidden !important;
+}
+
+.foto-dokter img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  border-radius: 50% !important;
+  display: block !important;
+}
+}
+
 
