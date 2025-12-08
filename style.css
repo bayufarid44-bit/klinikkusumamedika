@@ -41,26 +41,27 @@ body {
   left: 20px;
 }
 
-/* ===========================================================
-   FOTO DOKTER
-   =========================================================== */
+/* ================================
+   FOTO DOKTER (FIX FINAL)
+================================ */
 .foto-dokter {
-  width: 160px;       /* ukuran lingkaran */
-  height: 160px;
+  width: 65px;
+  height: 65px;
   border-radius: 50%;
   overflow: hidden;
-  display: flex;      
-  justify-content: center;
-  align-items: center;
-  background: #fff;   /* opsional agar jelas */
+  border: 3px solid rgba(255,255,255,0.9);
+  margin: auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
 }
 
+/* BAGIAN YANG SANGAT PENTING */
 .foto-dokter img {
-  width: auto;      
-  height: 100%;     
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   display: block;
 }
+
 
 /* ===========================================================
    TEXT & SECTION ALIGNMENT
@@ -177,3 +178,4 @@ body, p, h1, h2, h3, h4, h5, h6, li, a, td, th {
     height: 45px;
   }
 }
+
